@@ -12,26 +12,35 @@
 <body>
   <nav class="navbar">
     <div class="navbar-container">
-      <a href="index.html" class="navbar-logo" style="display:flex;align-items:center;gap:8px;">
+      <a href="index.html" class="navbar-logo">
         <img src="Logo2.png" alt="TR Desarrollo web logo" class="logo-img" width="44" height="44" />
         <span>Desarrollo web</span>
       </a>
       <button class="navbar-toggle" aria-label="Abrir menú">
-        <span class="navbar-toggle-icon"></span>
-      </button>
-      <ul class="navbar-links">
-        <li><a href="#servicios">Servicios</a></li>
-        <li><a href="#nosotros">Nosotros</a></li>
-        <li><a href="#valor">¿Por qué elegirnos?</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-        <li><a href="index.html" title="Inicio" style="display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;">
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false" style="vertical-align:middle;">
-            <path d="M3 11.5L12 4l9 7.5V20a1 1 0 0 1-1 1h-5a1 1 0 0 1-1-1v-4h-4v4a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V11.5z" stroke="#0A2342" stroke-width="2" fill="#fff"/>
+        <span class="navbar-toggle-icon">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true" focusable="false">
+            <rect y="7" width="32" height="3.5" rx="1.5" fill="#0A2342"/>
+            <rect y="14" width="32" height="3.5" rx="1.5" fill="#0A2342"/>
+            <rect y="21" width="32" height="3.5" rx="1.5" fill="#0A2342"/>
           </svg>
-        </a></li>
-      </ul>
+        </span>
+      </button>
     </div>
   </nav>
+  <aside class="sidebar" id="sidebar">
+    <ul class="sidebar-links">
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#nosotros">Nosotros</a></li>
+      <li><a href="#valor">¿Por qué elegirnos?</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+      <li><a href="index.html" title="Inicio" class="navbar-home-icon">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false">
+          <path d="M3 11.5L12 4l9 7.5V20a1 1 0 0 1-1 1h-5a1 1 0 0 1-1-1v-4h-4v4a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V11.5z" stroke="#0A2342" stroke-width="2" fill="#fff"/>
+        </svg>
+      </a></li>
+    </ul>
+  </aside>
+  <div class="sidebar-overlay" id="sidebarOverlay"></div>
   <header class="hero-llamativo">
     <div class="container hero-llamativo-content">
       <div class="logo-llamativo" style="display:flex;align-items:center;gap:10px;">
@@ -158,6 +167,11 @@ navbarLinks.forEach(link => {
     }
   });
 });
-</script>
+  </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      document.querySelector('.hero-llamativo').classList.add('visible');
+    });
+  </script>
 </body>
 </html> 

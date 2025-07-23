@@ -15,36 +15,39 @@
 <body>
   <nav class="navbar">
     <div class="navbar-container">
-      <a href="index.html" class="navbar-logo" style="display:flex;align-items:center;gap:8px;">
+      <a href="index.html" class="navbar-logo">
         <img src="Logo2.png" alt="TR Desarrollo web logo" class="logo-img" width="44" height="44" />
         <span>Desarrollo web</span>
       </a>
       <button class="navbar-toggle" aria-label="Abrir menú">
-        <span class="navbar-toggle-icon"></span>
-      </button>
-      <ul class="navbar-links">
-        <li><a href="#servicios">Servicios</a></li>
-        <li><a href="#nosotros">Nosotros</a></li>
-        <li><a href="#valor">¿Por qué elegirnos?</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-        <li><a href="index.html" title="Inicio" style="display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;">
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false" style="vertical-align:middle;">
-            <path d="M3 11.5L12 4l9 7.5V20a1 1 0 0 1-1 1h-5a1 1 0 0 1-1-1v-4h-4v4a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V11.5z" stroke="#0A2342" stroke-width="2" fill="#fff"/>
+        <span class="navbar-toggle-icon">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true" focusable="false">
+            <rect y="7" width="32" height="3.5" rx="1.5" fill="#0A2342"/>
+            <rect y="14" width="32" height="3.5" rx="1.5" fill="#0A2342"/>
+            <rect y="21" width="32" height="3.5" rx="1.5" fill="#0A2342"/>
           </svg>
-        </a></li>
-      </ul>
+        </span>
+      </button>
     </div>
   </nav>
-
+  <aside class="sidebar" id="sidebar">
+    <ul class="sidebar-links">
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#nosotros">Nosotros</a></li>
+      <li><a href="#valor">¿Por qué elegirnos?</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+      <li><a href="index.html" title="Inicio" class="navbar-home-icon">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false">
+          <path d="M3 11.5L12 4l9 7.5V20a1 1 0 0 1-1 1h-5a1 1 0 0 1-1-1v-4h-4v4a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V11.5z" stroke="#0A2342" stroke-width="2" fill="#fff"/>
+        </svg>
+      </a></li>
+    </ul>
+  </aside>
+  <div class="sidebar-overlay" id="sidebarOverlay"></div>
+  <main class="main-content">
   <header class="hero-llamativo">
     <div class="hero-bg"></div>
     <div class="container hero-llamativo-content">
-      <div class="logo-llamativo">
-        <a href="index.html" style="display:flex;align-items:center;gap:8px;text-decoration:none;">
-          <img src="Logo2.png" alt="FR Desarrollo web logo" class="logo-img" width="56" height="56" style="border-radius:50%;box-shadow:0 2px 12px rgba(10,35,66,0.18);background:#fff;object-fit:cover;" />
-          <span style="color:inherit;">Desarrollo web</span>
-        </a>
-      </div>
       <h1 class="hero-titulo">Llevá tu negocio al próximo nivel.<br><span class="hero-destacado">¡Impulsa tu presencia online!</span></h1>
       <p class="hero-sub">Landing Pages, One Page Sites y Microsites que destacan y convierten.</p>
       <div class="hero-botones">
@@ -115,15 +118,44 @@
 
   <section class="nosotros-section" id="nosotros">
     <div class="container nosotros-content">
-      <h2>Nosotros</h2>
+      <div class="nosotros-avatar nosotros-avatar-tomas">
+        <img src="https://avataaars.io/?avatarStyle=Circle&topType=ShortHairShortFlat&accessoriesType=Blank&hairColor=Brown&facialHairType=BeardLight&facialHairColor=Brown&clotheType=Hoodie&clotheColor=Blue03&eyeType=Default&eyebrowType=Default&mouthType=Smile&skinColor=Light" alt="Avatar Tomás" style="width:100%;height:100%;border-radius:50%;object-fit:cover;" />
+        <span class="nombre-avatar">Tomás</span>
+      </div>
       <div class="nosotros-info">
-        <p>Somos Talucci y Rizzo, estudiantes avanzados de la Licenciatura en Sistemas de Información, con más de 3 años de experiencia en desarrollo web y soluciones digitales.</p>
-        <p>Combinamos la formación académica con la práctica profesional para ofrecer sitios modernos, funcionales y adaptados a cada cliente. Nos apasiona la tecnología, el diseño y el aprendizaje constante.</p>
-        <ul>
-          <li>+3 años creando sitios web para emprendedores, empresas y profesionales.</li>
-          <li>Enfoque en calidad, comunicación y resultados.</li>
-          <li>Compromiso con la innovación y la mejora continua.</li>
-        </ul>
+        <h2>Nosotros</h2>
+        <p>Somos Tomás Talucci y Federico Rizzo, estudiantes avanzados de la Licenciatura en Sistemas de Información, con más de 3 años de experiencia en el desarrollo de soluciones web a medida.</p>
+        <p>Nos especializamos en el diseño y desarrollo de landing pages, one pages y micrositios, pensados para emprendedores, profesionales y pequeñas empresas que buscan una presencia online moderna, funcional y efectiva.</p>
+        <p>Combinamos la formación académica con la práctica profesional, con un enfoque en la calidad, la comunicación fluida y los resultados concretos. Apostamos a la mejora continua, la tecnología bien aplicada y la construcción de soluciones simples, claras y bien resueltas.</p>
+        <p>Este es solo el comienzo: nuestra propuesta va a seguir creciendo, sumando nuevos servicios, herramientas y soluciones digitales para acompañar a cada cliente en su evolución online.</p>
+      </div>
+      <div class="nosotros-avatar nosotros-avatar-federico">
+        <img src="https://avataaars.io/?avatarStyle=Circle&topType=ShortHairSides&accessoriesType=Blank&hairColor=Black&facialHairType=Blank&clotheType=BlazerShirt&clotheColor=Gray01&eyeType=Default&eyebrowType=Default&mouthType=Default&skinColor=Light" alt="Avatar Federico" style="width:100%;height:100%;border-radius:50%;object-fit:cover;" />
+        <span class="nombre-avatar">Federico</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="trabajos-section" id="trabajos">
+    <div class="container trabajos-content">
+      <h2>Conocé nuestros trabajos</h2>
+      <p class="trabajos-desc">Pronto vas a poder ver algunos de los proyectos y sitios web que realizamos para clientes reales. ¡Muy pronto más novedades!</p>
+      <div class="trabajos-grid">
+        <div class="trabajo-card">
+          <div class="trabajo-thumb"></div>
+          <h3>Proyecto 1</h3>
+          <p class="trabajo-info">Descripción breve del proyecto o cliente.</p>
+        </div>
+        <div class="trabajo-card">
+          <div class="trabajo-thumb"></div>
+          <h3>Proyecto 2</h3>
+          <p class="trabajo-info">Descripción breve del proyecto o cliente.</p>
+        </div>
+        <div class="trabajo-card">
+          <div class="trabajo-thumb"></div>
+          <h3>Proyecto 3</h3>
+          <p class="trabajo-info">Descripción breve del proyecto o cliente.</p>
+        </div>
       </div>
     </div>
   </section>
@@ -155,6 +187,101 @@
     <div class="container cta-flex-llamativa">
       <h2>¿Listo para destacar online?</h2>
       <a href="mailto:federico.s.rizzo@gmail.com?subject=Consulta%20desde%20la%20web" class="cta-btn-llamativo">Solicitar propuesta</a>
+    </div>
+  </section>
+
+  <!-- PROCESO DE TRABAJO -->
+  <section class="proceso-section" id="proceso">
+    <div class="container proceso-content">
+      <h2>¿Cómo trabajamos?</h2>
+      <div class="proceso-pasos">
+        <div class="paso">
+          <span class="paso-num">1</span>
+          <h3>Charla inicial</h3>
+          <p>Nos contás tu idea o necesidad y te asesoramos sin compromiso.</p>
+        </div>
+        <div class="paso">
+          <span class="paso-num">2</span>
+          <h3>Propuesta personalizada</h3>
+          <p>Te enviamos una propuesta clara, con tiempos y presupuesto.</p>
+        </div>
+        <div class="paso">
+          <span class="paso-num">3</span>
+          <h3>Desarrollo y feedback</h3>
+          <p>Desarrollamos tu sitio con revisiones y comunicación constante.</p>
+        </div>
+        <div class="paso">
+          <span class="paso-num">4</span>
+          <h3>Entrega y publicación</h3>
+          <p>Publicamos tu web y te acompañamos en el lanzamiento.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PREGUNTAS FRECUENTES -->
+  <section class="faq-section" id="faq">
+    <div class="container faq-content">
+      <h2>Preguntas frecuentes</h2>
+      <div class="faq-list">
+        <div class="faq-item">
+          <h3>¿Cuánto tarda el desarrollo?</h3>
+          <p>Depende del tipo de sitio, pero una landing page suele estar lista en 7-10 días hábiles. Micrositios y one page pueden demorar un poco más.</p>
+        </div>
+        <div class="faq-item">
+          <h3>¿Qué necesito para empezar?</h3>
+          <p>Solo tu idea y, si tenés, tu logo y textos. Nosotros te guiamos en todo el proceso.</p>
+        </div>
+        <div class="faq-item">
+          <h3>¿Puedo pedir cambios?</h3>
+          <p>Sí, incluimos revisiones durante el desarrollo para que el resultado sea el que esperás.</p>
+        </div>
+        <div class="faq-item">
+          <h3>¿Incluyen dominio y hosting?</h3>
+          <p>Podemos asesorarte y gestionar el alta de dominio y hosting si lo necesitás.</p>
+        </div>
+        <div class="faq-item">
+          <h3>¿Ofrecen soporte o mantenimiento?</h3>
+          <p>Ofrecemos soporte y mantenimiento como servicio adicional. Consultanos para más info.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GARANTÍA Y SOPORTE (opcional) -->
+  <section class="garantia-section" id="garantia">
+    <div class="container garantia-content">
+      <h2>Garantía y soporte</h2>
+      <p>Ofrecemos garantía de funcionamiento y soporte técnico como servicio adicional. Si necesitás acompañamiento o mantenimiento, consultanos y te armamos una propuesta a medida.</p>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="cta-section-final">
+    <div class="container cta-final-content">
+      <h2>¿Listo para potenciar tu presencia online?</h2>
+      <p class="cta-mensaje-final">Completá el formulario de contacto y te respondemos rápido.</p>
+    </div>
+  </section>
+
+  <!-- FORMULARIO DE CONTACTO RÁPIDO -->
+  <section class="contacto-llamativo" id="contacto">
+    <div class="container">
+      <form class="formulario-contacto-llamativo">
+        <div class="campo-llamativo">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre" required>
+        </div>
+        <div class="campo-llamativo">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="campo-llamativo">
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="cta-btn-llamativo">Enviar consulta</button>
+      </form>
     </div>
   </section>
 
@@ -202,21 +329,35 @@
     document.querySelectorAll('.tarjeta-servicio, .campo-llamativo, .valor-lista-llamativa li').forEach(el => {
       observer.observe(el);
     });
-
-    // Expansión de tarjetas de servicios
-    const expansions = [
-      { btn: document.querySelector('#landing-expansion .expand-btn'), content: document.getElementById('landing-tipos') },
-      { btn: document.querySelector('#onepage-expansion .expand-btn'), content: document.getElementById('onepage-tipos') },
-      { btn: document.querySelector('#microsite-expansion .expand-btn'), content: document.getElementById('microsite-tipos') }
-    ];
-    expansions.forEach(({btn, content}) => {
-      btn.addEventListener('click', function() {
-        const expanded = btn.getAttribute('aria-expanded') === 'true';
-        btn.setAttribute('aria-expanded', !expanded);
-        content.hidden = expanded;
-        btn.querySelector('.expand-icon').textContent = expanded ? '▼' : '▲';
-      });
+    // Animación de entrada para el hero principal
+    document.addEventListener('DOMContentLoaded', function() {
+      document.querySelector('.hero-llamativo').classList.add('visible');
     });
+
+    // Sidebar desplegable
+    const navbarToggle = document.querySelector('.navbar-toggle');
+    const sidebar = document.getElementById('sidebar');
+    const sidebarOverlay = document.getElementById('sidebarOverlay');
+    if (navbarToggle && sidebar && sidebarOverlay) {
+      function closeSidebar() {
+        sidebar.classList.remove('open');
+        sidebarOverlay.classList.remove('open');
+        navbarToggle.classList.remove('active');
+      }
+      navbarToggle.addEventListener('click', function() {
+        sidebar.classList.toggle('open');
+        sidebarOverlay.classList.toggle('open');
+        navbarToggle.classList.toggle('active');
+      });
+      sidebarOverlay.addEventListener('click', closeSidebar);
+      sidebar.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', closeSidebar);
+      });
+      // Cerrar con ESC
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') closeSidebar();
+      });
+    }
   </script>
 </body>
 </html> 
